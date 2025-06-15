@@ -1,0 +1,98 @@
+html {
+    font-family: Inter, sans-serif;
+    color: black    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #f55a5a;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.entry {
+    color: #2B283A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 252px; /* 168 * 1.5 */
+    width: 705px;  /* 470 * 1.5 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px; /* 40 * 1.5 */
+    gap: 15px; /* 10 * 1.5 */
+}
+
+a {
+  text-decoration: none;  /* Remove underline */
+  color: inherit;         /* Use the parent element's text color */
+  outline: none;          /* Remove focus outline (optional, be careful with accessibility) */
+  cursor: pointer;        /* Keep pointer cursor for usability */
+}
+
+.entry > .entry-details > .location-wrapper {
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px; /* 10 * 1.5 */
+}
+
+.location-wrapper > .location {
+    letter-spacing: 3px;
+}
+
+.location-wrapper > .map-link {
+    color: #918E9B;
+    text-decoration: underline;
+}
+
+.entry span {
+    font-size: 1.05rem; /* 0.7 * 1.5 */
+}
+
+.entry-details > h3 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.entry > .entry-image {
+    border-radius: 7.5px; /* 5 * 1.5 */
+    flex: 0 0 187.5px; /* 125 * 1.5 */
+    height: 252px; /* 168 * 1.5 */
+}
+
+.entry-image > img {
+    border-radius: 5px;
+    width: 187.5px;
+    height: 252px;
+    object-fit: cover;
+}
+
+.entry > .entry-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-details > .date {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.entry-details > .description {
+    font-weight: 400;
+}
